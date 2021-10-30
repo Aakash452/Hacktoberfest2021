@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>Welcome to chutiya calculator</title>
+</head>
+<style>
+  .innerside{
+    border: 2px solid black;
+    margin:20px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.innerside2{
+    border: 2px solid black;
+    margin:20px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.innerside3{
+    border: 2px solid black;
+    margin:20px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.innersideform{
+    border:2px solid black;
+    min-width: 30em;
+  
+
+}
+.none{
+    display: none;
+}
+.block{
+    display:block;
+}
+.selection{
+    margin:20px;
+}
+#txtheading{
+    color:red;
+    margin:10px;
+    text-align: center;
+}
+</style>
+<body>
+  <section class="header">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Chutiya calculator</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./topPlayers.html">Top Players</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section class="body">
+    <div class="container">
+      <!-- section 1 -->
+      <div class="innerside" id="section1">
+        <h1>Welcome to Chutiya calculator</h1>
+        <h2>Here, You can know how much chutiya you are</h2>
+        <div class="form">
+
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text"> Before go ahead, please enter the following detailes to become
+                chutiya</div>
+            </div>
+            <div class="mb-3">
+              <label for="username" class="form-label">Pubg username</label>
+              <input type="name" class="form-control" id="username">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I agree, i will accept the result</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitbtn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- section 2 -->
+
+      <div class="innerside2 none" id="section2">
+
+        <div class="innersideform">
+          <div id="txtheading">
+           
+          </div>
+
+          <label for="floatingSelect">Please select from which season you are playing Pubg</label>
+          <div class="form-floating mb-3">
+
+            <select class="form-select mb-3" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>season 19</option>
+              <option value="18"> 18</option>
+              <option value=" Season 17"> 17</option>
+              <option value=" Season 16"> 16</option>
+              <option value=" Season 15"> 15</option>
+              <option value=" Season 14"> 14</option>
+              <option value=" Season 13"> 13</option>
+              <option value=" Season 12"> 12</option>
+              <option value=" Season 11"> 11</option>
+              <option value=" Season 10"> 10</option>
+              <option value=" Season 9"> 9</option>
+              <option value=" Season 8"> 8</option>
+              <option value=" Season 7"> 7</option>
+              <option value=" Season 6"> 6</option>
+              <option value=" Season 5"> 5</option>
+              <option value=" Season 4"> 4</option>
+              <option value=" Season 3"> 3</option>
+              <option value=" Season 2"> 2</option>
+              <option value=" Season 1"> 1</option>
+            </select>
+            <div class="selection">
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="MatchesPlayed" placeholder="">
+                <label for="MatchesPlayed">Your Matches Played in Current Season</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="KillsDone" placeholder="Password">
+                <label for="KillsDone">Your Kills in current season</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="deviceName" placeholder="Password">
+                <label for="deviceName">Enter your Device name</label>
+              </div>
+              <input class="btn btn-primary" id="section2btn" type="submit" value="Submit">
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+      <!-- section 3 -->
+      <div class="innerside3 none" id="section3">
+        <div class="container" id="addheresection3">
+         
+        </div>
+        
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+  <script>
+    let submitbtn = document.getElementById("submitbtn");
+let Pname = document.getElementById('name');
+let username = document.getElementById('username');
+let section1 = document.getElementById("section1");
+let section2 = document.getElementById("section2");
+let floatingSelect = document.getElementById("floatingSelect");
+let MatchesPlayed = document.getElementById("MatchesPlayed");
+let KillsDone = document.getElementById("KillsDone");
+let kdratio;
+let deviceName = document.getElementById("deviceName");
+
+submitbtn.addEventListener('click', () => {
+    alert("Be alert! You are going to see your darkside so be alert!");
+    section1.classList.add("none");
+    section2.classList.remove("none");
+    let txtheading = document.getElementById("txtheading");
+    txtheading.innerHTML = ` 
+<h1>Welcome ${Pname.value}</h1>
+<h2>let us check how much chutiya you are currently</h2>
+<h3>Please fill the following detailes correctly Mr.${username.value}!</h3>`;
+
+    let section2btn = document.getElementById("section2btn");
+    section2btn.addEventListener('click', () => {
+        let getvalue = floatingSelect.options[floatingSelect.selectedIndex].value;
+        kdratio=(KillsDone.value/MatchesPlayed.value);
+        let section3 = document.getElementById("section3");
+        section2.classList.add("none");
+        section3.classList.remove("none");
+        let addheresection3 = document.getElementById("addheresection3");
+        addheresection3.innerHTML = ` <h3>${Pname.value} you are playing from  ${getvalue}  on ${deviceName.value} and still your kd ratio is ${kdratio}</h3>
+        <h1> You are a Chutiya!</h1>`
+
+    });
+
+
+
+
+
+});
+
+
+
+  </script>
+</body>
+
+</html>
